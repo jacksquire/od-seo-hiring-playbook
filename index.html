@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Outrider Digital &middot; Local SEO Specialist &middot; Hiring Playbook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #08150c; --bg-2: #0f2417; --bg-3: #15301d;
+    --surface: #ffffff; --surface-soft: #f4f8f4; --surface-warm: #f7faf6;
+    --ink: #0f2417; --ink-soft: #36463b; --ink-mute: #5b6660;
+    --line: #dfe7df; --line-soft: #eaf1ea;
+    --brand: #47b54c; --brand-soft: #77c771; --brand-deep: #1b7a33; --brand-ink: #15692b;
+    --good: #2f8a6b; --warn: #c08a2d; --bad: #c0533f; --info: #3f6f9e; --gold: #e0a82e;
+    --jack: #c78a1e; --jack-soft: #f6ecd3;
+    --daniel: #3f6f9e; --daniel-soft: #e0ebf4;
+    --cand: #1b7a33; --cand-soft: #dcefe0;
+    --shadow-sm: 0 1px 2px rgba(8,21,12,.04), 0 4px 14px rgba(8,21,12,.05);
+    --shadow: 0 1px 2px rgba(8,21,12,.05), 0 14px 40px rgba(8,21,12,.07);
+    --radius: 16px;
+    --serif: "Playfair Display", Georgia, serif;
+    --read: "Newsreader", Georgia, serif;
+    --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { font-family: var(--sans); background: var(--surface-soft); color: var(--ink); line-height: 1.6; font-size: 16px; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+  ::selection { background: rgba(71,181,76,0.26); }
+
+  /* HERO */
+  .hero { position: relative; background:
+      radial-gradient(1200px 500px at 78% -10%, rgba(71,181,76,0.18), transparent 60%),
+      radial-gradient(800px 400px at 10% 110%, rgba(71,181,76,0.08), transparent 55%),
+      linear-gradient(150deg, var(--bg) 0%, var(--bg-2) 55%, var(--bg-3) 100%);
+    color: #eef3ee; padding: 78px 48px 58px; overflow: hidden; border-bottom: 1px solid rgba(71,181,76,0.38); }
+  .hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--brand), transparent); }
+  .hero-inner { max-width: 1240px; margin: 0 auto; position: relative; z-index: 2; }
+  .eyebrow { text-transform: uppercase; letter-spacing: 0.32em; font-size: 11px; font-weight: 600; color: var(--brand-soft); margin-bottom: 22px; display: flex; align-items: center; gap: 12px; }
+  .eyebrow::before { content: ""; width: 32px; height: 1px; background: var(--brand-soft); display: inline-block; }
+  h1 { font-family: var(--serif); font-size: 50px; line-height: 1.06; margin: 0 0 18px; font-weight: 500; letter-spacing: -0.015em; color: #f6faf5; }
+  .lede { font-family: var(--read); font-size: 20px; line-height: 1.55; color: #c4d0c6; max-width: 820px; margin: 0 0 34px; font-weight: 400; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1px; margin-top: 34px; background: rgba(71,181,76,0.16); border: 1px solid rgba(71,181,76,0.16); border-radius: 12px; overflow: hidden; }
+  .meta-item { background: rgba(15,36,23,0.7); padding: 18px 20px; }
+  .meta-item .label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.16em; color: #8ba18f; margin-bottom: 8px; font-weight: 600; }
+  .meta-item .value { font-size: 15px; color: #eef3ee; font-weight: 500; line-height: 1.35; }
+  .meta-item .value.alert { color: var(--gold); }
+
+  /* BOARD */
+  .board-wrap { max-width: 1400px; margin: 0 auto; padding: 44px 24px 8px; }
+  .board-head { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding: 0 8px 6px; }
+  .section-eyebrow { font-family: var(--sans); text-transform: uppercase; letter-spacing: 0.22em; font-size: 11px; font-weight: 600; color: var(--brand-deep); display: flex; align-items: center; gap: 10px; }
+  .section-eyebrow::before { content: ""; width: 22px; height: 1px; background: var(--brand-deep); }
+  .board-hint { font-size: 12.5px; color: var(--ink-mute); }
+  .board { display: flex; gap: 14px; overflow-x: auto; padding: 20px 8px 28px; -webkit-overflow-scrolling: touch; scroll-snap-type: x proximity; align-items: stretch; }
+  .board::-webkit-scrollbar { height: 10px; }
+  .board::-webkit-scrollbar-thumb { background: #cdd8ce; border-radius: 6px; }
+
+  .lane { flex: 0 0 244px; width: 244px; scroll-snap-align: start; background: var(--surface); border: 1px solid var(--line-soft); border-radius: 15px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; overflow: hidden; }
+  .lane-head { padding: 16px 18px 15px; border-bottom: 1px solid var(--line-soft); position: relative; }
+  .lane-head::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 5px; }
+  .lane.o-jack .lane-head::before { background: var(--jack); }
+  .lane.o-daniel .lane-head::before { background: var(--daniel); }
+  .lane.o-cand .lane-head::before { background: var(--cand); }
+  .lane-step { font-size: 10px; text-transform: uppercase; letter-spacing: 0.13em; font-weight: 700; color: var(--ink-mute); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+  .lane-num { display: inline-flex; align-items: center; justify-content: center; width: 21px; height: 21px; border-radius: 7px; background: var(--bg-2); color: #eef3ee; font-size: 11px; font-weight: 700; }
+  .lane-title { font-family: var(--serif); font-size: 18px; font-weight: 500; color: var(--ink); line-height: 1.16; margin-bottom: 11px; }
+  .lane-owner { display: inline-flex; align-items: center; gap: 7px; font-size: 11.5px; font-weight: 600; padding: 4px 11px 4px 8px; border-radius: 999px; }
+  .lane.o-jack .lane-owner { background: var(--jack-soft); color: #8a5e0f; }
+  .lane.o-daniel .lane-owner { background: var(--daniel-soft); color: #2b5679; }
+  .lane.o-cand .lane-owner { background: var(--cand-soft); color: var(--brand-ink); }
+  .lane-owner .dot { width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
+  .lane-body { padding: 14px 16px 16px; font-size: 12.5px; color: var(--ink-soft); line-height: 1.5; flex: 1; }
+  .lane-body ul { margin: 0; padding-left: 15px; }
+  .lane-body li { margin-bottom: 5px; } .lane-body li::marker { color: var(--brand-deep); }
+  .lane-gate { margin: 0 16px 14px; padding: 9px 12px; border-radius: 9px; background: #fbf1e0; border: 1px solid #efd9ac; font-size: 11px; color: #8a5e0f; font-weight: 600; line-height: 1.4; }
+  .lane-gate strong { color: #6f4a0b; }
+
+  /* MAIN SECTIONS */
+  main { max-width: 1080px; margin: 0 auto; padding: 20px 32px 40px; }
+  section { background: var(--surface); border-radius: var(--radius); padding: 42px 46px; margin-bottom: 24px; box-shadow: var(--shadow-sm); border: 1px solid var(--line-soft); }
+  section > .section-eyebrow { margin-bottom: 12px; }
+  h2 { font-family: var(--serif); font-size: 30px; margin: 0 0 16px; font-weight: 500; letter-spacing: -0.01em; line-height: 1.14; color: var(--ink); }
+  h3 { font-family: var(--sans); font-size: 16px; margin: 26px 0 10px; font-weight: 700; color: var(--ink); letter-spacing: -0.01em; }
+  p { margin: 0 0 14px; color: var(--ink-soft); }
+  ul, ol { margin: 0 0 14px; padding-left: 22px; color: var(--ink-soft); }
+  li { margin-bottom: 7px; } li::marker { color: var(--brand-deep); }
+  strong { color: var(--ink); font-weight: 600; }
+  a { color: var(--brand-deep); word-break: break-word; }
+
+  .callout { border-left: 3px solid var(--gold); background: linear-gradient(90deg, rgba(224,168,46,0.10), rgba(224,168,46,0.01)); padding: 18px 22px; border-radius: 0 12px 12px 0; margin: 20px 0; }
+  .callout p:last-child { margin-bottom: 0; }
+  .callout.brand { border-left-color: var(--brand); background: linear-gradient(90deg, rgba(71,181,76,0.09), rgba(71,181,76,0.01)); }
+  .callout-title { font-weight: 700; color: var(--ink); margin-bottom: 8px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; }
+
+  .draft-tag { display: inline-block; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 3px 9px; border-radius: 6px; background: #fbf1e0; color: #8a5e0f; border: 1px solid #efd9ac; margin-left: 10px; vertical-align: middle; }
+
+  /* JOB POST BLOCK */
+  .jobpost { border: 1px solid var(--line); border-radius: 14px; background: var(--surface-warm); padding: 28px 30px; margin: 18px 0; }
+  .jobpost h3 { margin-top: 18px; }
+  .jobpost h3:first-child { margin-top: 0; }
+  .odseo { font-family: var(--mono); background: var(--bg-2); color: #eef3ee; padding: 2px 8px; border-radius: 5px; font-size: 13px; font-weight: 500; }
+
+  /* TABLES */
+  .table-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; margin: 18px 0; -webkit-overflow-scrolling: touch; }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  th, td { text-align: left; padding: 11px 14px; border-bottom: 1px solid var(--line-soft); vertical-align: top; }
+  th { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-mute); font-weight: 700; background: var(--surface-soft); white-space: nowrap; }
+  td { color: var(--ink-soft); }
+  td strong { color: var(--ink); }
+  .link-cell { font-family: var(--mono); font-size: 11px; }
+  .slot { font-weight: 700; color: var(--ink); white-space: nowrap; }
+  .fill { color: var(--ink-mute); font-style: italic; }
+
+  /* SCORE RUBRIC */
+  .rubric { list-style: none; padding: 0; margin: 18px 0; }
+  .rubric li { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--line-soft); margin: 0; }
+  .rubric li:last-child { border-bottom: none; }
+  .rubric .crit { font-size: 14px; color: var(--ink-soft); }
+  .rubric .crit strong { color: var(--ink); }
+  .rubric .pts { font-family: var(--mono); font-weight: 600; font-size: 13px; color: var(--brand-ink); white-space: nowrap; background: var(--cand-soft); padding: 3px 10px; border-radius: 999px; }
+  .rubric .total { font-weight: 700; }
+  .rubric .total .crit strong { font-size: 15px; }
+  .rubric .total .pts { background: var(--bg-2); color: #eef3ee; }
+
+  /* CHECK LISTS */
+  .check-list { list-style: none; padding: 0; margin: 16px 0; }
+  .check-list li { position: relative; padding: 9px 0 9px 30px; border-bottom: 1px solid var(--line-soft); margin: 0; font-size: 14px; color: var(--ink-soft); }
+  .check-list li:last-child { border-bottom: none; }
+  .check-list li::before { content: ""; position: absolute; left: 0; top: 11px; width: 15px; height: 15px; border: 1.5px solid var(--brand); border-radius: 4px; }
+  .check-list li strong { color: var(--ink); }
+
+  .qa-list { counter-reset: q; list-style: none; padding: 0; margin: 16px 0; }
+  .qa-list li { counter-increment: q; position: relative; padding: 12px 0 12px 40px; border-bottom: 1px solid var(--line-soft); margin: 0; font-size: 14.5px; color: var(--ink-soft); }
+  .qa-list li:last-child { border-bottom: none; }
+  .qa-list li::before { content: counter(q); position: absolute; left: 0; top: 11px; width: 26px; height: 26px; border-radius: 8px; background: var(--daniel-soft); color: #2b5679; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+
+  /* CHECKLIST TIERS */
+  .tier { border: 1px solid var(--line); border-radius: 12px; margin: 14px 0; overflow: hidden; }
+  .tier-head { padding: 12px 18px; font-weight: 700; font-size: 13px; display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+  .tier-head .impact { font-size: 10px; text-transform: uppercase; letter-spacing: 0.09em; font-weight: 700; padding: 3px 9px; border-radius: 999px; }
+  .tier.t1 .tier-head { background: linear-gradient(90deg, rgba(192,83,63,0.12), transparent); color: #a23f2c; }
+  .tier.t1 .impact { background: #fbe6e1; color: #a23f2c; }
+  .tier.t2 .tier-head { background: linear-gradient(90deg, rgba(224,168,46,0.14), transparent); color: #8a5e0f; }
+  .tier.t2 .impact { background: #fbf1e0; color: #8a5e0f; }
+  .tier.t3 .tier-head { background: linear-gradient(90deg, rgba(63,111,158,0.12), transparent); color: #2b5679; }
+  .tier.t3 .impact { background: #e0ebf4; color: #2b5679; }
+  .tier.t4 .tier-head { background: linear-gradient(90deg, rgba(47,138,107,0.12), transparent); color: #226b53; }
+  .tier.t4 .impact { background: #dcefe6; color: #226b53; }
+  .tier.t5 .tier-head { background: linear-gradient(90deg, rgba(27,122,51,0.12), transparent); color: var(--brand-ink); }
+  .tier.t5 .impact { background: var(--cand-soft); color: var(--brand-ink); }
+  .tier ol { margin: 0; padding: 12px 20px 12px 42px; }
+  .tier li { margin-bottom: 6px; font-size: 13.5px; }
+
+  .footer { text-align: center; padding: 40px 24px 60px; color: var(--ink-mute); font-size: 13px; }
+  .footer strong { color: var(--ink-soft); }
+  .footer a { color: var(--brand-deep); }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Outrider Digital &middot; Hiring Playbook</div>
+    <h1>Local SEO Specialist</h1>
+    <p class="lede">Everything for this hire in one place: the job post, the recruitment pipeline with owners, screening questions, the paid trial and how it is scored, the candidate to NeuronWriter link tracker, and the reference material the role plugs into.</p>
+    <div class="meta-grid">
+      <div class="meta-item"><div class="label">Role</div><div class="value">Local SEO Specialist</div></div>
+      <div class="meta-item"><div class="label">Terms</div><div class="value">30 hrs / week</div></div>
+      <div class="meta-item"><div class="label">Rate</div><div class="value">$1,100 / month fixed</div></div>
+      <div class="meta-item"><div class="label">Pipeline</div><div class="value">7 steps &middot; Daniel &rarr; Jack</div></div>
+      <div class="meta-item"><div class="label">Paid trial</div><div class="value alert">Scored 1 to 10 by Jack</div></div>
+    </div>
+  </div>
+</header>
+
+<div class="board-wrap">
+  <div class="board-head">
+    <div class="section-eyebrow">Recruitment pipeline</div>
+    <div class="board-hint">Scroll sideways &rarr;</div>
+  </div>
+  <div class="board">
+
+    <div class="lane o-daniel">
+      <div class="lane-head">
+        <div class="lane-step"><span class="lane-num">1</span> Job post</div>
+        <div class="lane-title">Publish the job post</div>
+        <span class="lane-owner"><span class="dot"></span>Daniel</span>
+      </div>
+      <div class="lane-body">Post the Local SEO Specialist ad. Applicants must open with the keyword and attach proof of results.</div>
+      <div class="lane-gate"><strong>Filter:</strong> application starts with <span style="font-family:var(--mono)">ODSEO</span> + proof of results attached</div>
+    </div>
+
+    <div class="lane o-daniel">
+      <div class="lane-head">
+        <div class="lane-step"><span class="lane-num">2</span> Shortlist</div>
+        <div class="lane-title">Shortlist candidates</div>
+        <span class="lane-owner"><span class="dot"></span>Daniel</span>
+      </div>
+      <div class="lane-body">Screen applications, prioritise those with clear proof of results, and shortlist the strongest.</div>
+      <div class="lane-gate"><strong>Gate:</strong> 6 best candidates advance (one NeuronWriter link each)</div>
+    </div>
+
+    <div class="lane o-daniel">
+      <div class="lane-head">
+        <div class="lane-step"><span class="lane-num">3</span> Screening</div>
+        <div class="lane-title">Screening questions</div>
+        <span class="lane-owner"><span class="dot"></span>Daniel</span>
+      </div>
+      <div class="lane-body">Send the screening questions to confirm experience, tooling, availability, and rate before investing interview time.</div>
+      <div class="lane-gate"><strong>Gate:</strong> answers confirm experience, tools, and availability fit</div>
+    </div>
+
+    <div class="lane o-daniel">
+      <div class="lane-head">
+        <div class="lane-step"><span class="lane-num">4</span> Interview</div>
+        <div class="lane-title">Daniel interview</div>
+        <span class="lane-owner"><span class="dot"></span>Daniel</span>
+      </div>
+      <div class="lane-body">First interview: verify the proof of results, dig into real campaigns, and assess communication.</div>
+      <div class="lane-gate"><strong>Gate:</strong> Daniel approves candidate for the paid trial</div>
+    </div>
+
+    <div class="lane o-cand">
+      <div class="lane-head">
+        <div class="lane-step"><span class="lane-num">5</span> Paid trial</div>
+        <div class="lane-title">Paid test task</div>
+        <span class="lane-owner"><span class="dot"></span>Candidate &middot; scored by Jack</span>
+      </div>
+      <div class="lane-body">Build a new OutriderIT service page in NeuronWriter to spec. Each candidate gets their own NeuronWriter link.</div>
+      <div class="lane-gate"><strong>Gate:</strong> Jack scores each submission 1 to 10 against the rubric</div>
+    </div>
+
+    <div class="lane o-jack">
+      <div class="lane-head">
+        <div class="lane-step"><span class="lane-num">6</span> Interview</div>
+        <div class="lane-title">Jack interview</div>
+        <span class="lane-owner"><span class="dot"></span>Jack</span>
+      </div>
+      <div class="lane-body">Final interview with the top trial performers. Fit, ownership, and how they work on ongoing campaigns.</div>
+      <div class="lane-gate"><strong>Gate:</strong> Jack selects the hire</div>
+    </div>
+
+    <div class="lane o-jack">
+      <div class="lane-head">
+        <div class="lane-step"><span class="lane-num">7</span> Hire</div>
+        <div class="lane-title">Hire &amp; onboard</div>
+        <span class="lane-owner"><span class="dot"></span>Jack</span>
+      </div>
+      <div class="lane-body">Make the offer (30 hrs/week, $1,100/month fixed) and hand off to onboarding.</div>
+      <div class="lane-gate"><strong>Done:</strong> offer accepted, onboarding started</div>
+    </div>
+
+  </div>
+</div>
+
+<main>
+
+  <section>
+    <div class="section-eyebrow">Step 1 &middot; ready to repost</div>
+    <h2>The job post</h2>
+    <div class="jobpost">
+      <h3>Local SEO Specialist Needed for Ongoing Projects</h3>
+      <p>We are looking for an experienced Local SEO specialist to help rank local businesses in both organic Google search results and Google Maps / local map packs.</p>
+      <p>The ideal candidate must have at least 3 years of proven experience working with local businesses and improving their online visibility.</p>
+      <h3>Requirements</h3>
+      <ul>
+        <li>Minimum 3 years of experience in Local SEO</li>
+        <li>Proven experience ranking local businesses in organic search and local map packs</li>
+        <li>Strong experience with Google Business Profile optimization</li>
+        <li>Experience using SEO tools such as Surfer SEO, NeuronWriter, SEMrush, and/or Ahrefs</li>
+        <li>Experience working with AI tools such as ChatGPT and Claude</li>
+        <li>Proficient English writing and speaking skills</li>
+        <li>Ability to communicate clearly and provide regular updates</li>
+      </ul>
+      <h3>Nice to Have</h3>
+      <ul>
+        <li>Experience with AI automation tools such as n8n</li>
+        <li>Technical SEO experience</li>
+        <li>Experience creating or improving SEO workflows using AI tools</li>
+      </ul>
+      <p>When applying, please include proof of previous results, such as screenshots from Google Search Console, Google Analytics, ranking improvements, traffic growth, or a short video walkthrough of your past work. Applications with clear proof of results will be prioritized.</p>
+      <p>We are looking for someone reliable, detail-oriented, and able to work independently on ongoing local SEO campaigns.</p>
+      <p>When applying please start your application with the word <span class="odseo">ODSEO</span> in all caps.</p>
+    </div>
+    <div class="callout brand">
+      <div class="callout-title">Terms to state on offer</div>
+      <p>30 hours per week, $1,100 USD fixed salary per month. Ongoing engagement on local SEO campaigns.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-eyebrow">Step 3 &middot; owner: Daniel</div>
+    <h2>Screening questions <span class="draft-tag">Proposed &middot; adjust freely</span></h2>
+    <p>Sent after shortlisting, before the Daniel interview. Built from the job requirements so answers confirm real fit before interview time is spent.</p>
+    <ol class="qa-list">
+      <li>Share one local business you moved into the map pack. Where did it start, where did it end up, over what timeframe, and what did you change? Attach proof (GSC, GA, or ranking screenshots).</li>
+      <li>Walk us through how you optimize a Google Business Profile from scratch, and how you handle one that already has a messy or risky verification history.</li>
+      <li>Which SEO tools do you use day to day (Surfer, NeuronWriter, SEMrush, Ahrefs), and what do you use each one for?</li>
+      <li>Describe your content process with AI (ChatGPT / Claude). How do you keep the output from reading as AI-written and from failing AI detectors?</li>
+      <li>How do you keep NAP consistent and clean up citations across directories?</li>
+      <li>Have you built or used automations such as n8n in your SEO work? Give one concrete example. (Nice to have.)</li>
+      <li>Confirm availability: 30 hours per week, timezone overlap with our team, and comfort with the $1,100/month fixed rate.</li>
+    </ol>
+  </section>
+
+  <section>
+    <div class="section-eyebrow">Step 5 &middot; the paid trial</div>
+    <h2>Test task: OutriderIT service page</h2>
+    <p>Given to the six shortlisted candidates. The task is to create a new service page for an imaginary business, <strong>OutriderIT</strong>, in NeuronWriter. These are recycled from old optimizations with the content deleted, so each candidate builds a fresh page. Each candidate gets their own NeuronWriter link (one link per client).</p>
+    <h3>Must satisfy</h3>
+    <ul class="check-list">
+      <li><strong>NeuronWriter score 80+</strong> (85+ preferred)</li>
+      <li><strong>Readability grade 8 or 9</strong> on hemingwayapp.com</li>
+      <li><strong>1,200 words</strong> (ignore NeuronWriter word-count recommendations for this test)</li>
+      <li><strong>AI score 40 or lower</strong> on zerogpt.com</li>
+      <li><strong>No em-dashes</strong> or other signs of AI writing</li>
+      <li><strong>Nice formatting</strong> with a FAQs section</li>
+      <li><strong>Optimized SEO title</strong></li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="section-eyebrow">Step 5 &middot; tracking</div>
+    <h2>Candidate to NeuronWriter link tracker</h2>
+    <p>One link per candidate, one link per client. Fill in the candidate name and the date sent when each trial goes out, then record the score when it comes back. Keep this the single source of truth for which link went where.</p>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>Slot</th><th>Candidate</th><th>NeuronWriter link</th><th>Date sent</th><th>Score /10</th><th>Decision</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="slot">1</td><td class="fill">to fill</td><td class="link-cell"><a href="https://app.neuronwriter.com/analysis/share/7b2d2bd425c7a9b6/8edcb7446c2274699ce7dd8d90f5a764b730">app.neuronwriter.com/analysis/share/7b2d2bd4&hellip;</a></td><td class="fill">TBD</td><td class="fill">TBD</td><td class="fill">TBD</td></tr>
+          <tr><td class="slot">2</td><td class="fill">to fill</td><td class="link-cell"><a href="https://app.neuronwriter.com/analysis/share/507edceb9918f463/09bc702966836ed8aab02b2cc0b6ca53b730">app.neuronwriter.com/analysis/share/507edceb&hellip;</a></td><td class="fill">TBD</td><td class="fill">TBD</td><td class="fill">TBD</td></tr>
+          <tr><td class="slot">3</td><td class="fill">to fill</td><td class="link-cell"><a href="https://app.neuronwriter.com/analysis/share/d2e1c4c5b475bcf8/f5a0f7d161a79591d6031f8c5731a4a1b730">app.neuronwriter.com/analysis/share/d2e1c4c5&hellip;</a></td><td class="fill">TBD</td><td class="fill">TBD</td><td class="fill">TBD</td></tr>
+          <tr><td class="slot">4</td><td class="fill">to fill</td><td class="link-cell"><a href="https://app.neuronwriter.com/analysis/share/ea5019d455bfdf1e/8a1c3924c92febf6118e8dff14937a65b730">app.neuronwriter.com/analysis/share/ea5019d4&hellip;</a></td><td class="fill">TBD</td><td class="fill">TBD</td><td class="fill">TBD</td></tr>
+          <tr><td class="slot">5</td><td class="fill">to fill</td><td class="link-cell"><a href="https://app.neuronwriter.com/analysis/share/75b347ba6432ac8f/9ec61461f2958af894bbd9bdf596761eb730">app.neuronwriter.com/analysis/share/75b347ba&hellip;</a></td><td class="fill">TBD</td><td class="fill">TBD</td><td class="fill">TBD</td></tr>
+          <tr><td class="slot">6</td><td class="fill">to fill</td><td class="link-cell"><a href="https://app.neuronwriter.com/analysis/share/0ab3304cb42259d3/6c5c9437ed7298d49e40340397771c6cb730">app.neuronwriter.com/analysis/share/0ab3304c&hellip;</a></td><td class="fill">TBD</td><td class="fill">TBD</td><td class="fill">TBD</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:13px;color:var(--ink-mute)">Links point to the full NeuronWriter share URL; the shortened text is only for readability. One is deliberately assigned per candidate so no two work the same page.</p>
+  </section>
+
+  <section>
+    <div class="section-eyebrow">Step 5 &middot; owner: Jack</div>
+    <h2>Trial scoring rubric <span class="draft-tag">Proposed &middot; 10 points total</span></h2>
+    <p>Jack scores each submission from 1 to 10. This rubric turns the pass/fail criteria into points so scores are comparable across candidates. Adjust the weights to taste.</p>
+    <ul class="rubric">
+      <li><span class="crit"><strong>NeuronWriter content score</strong> &middot; 85+ full marks, 80 to 84 partial, under 80 zero</span><span class="pts">2 pts</span></li>
+      <li><span class="crit"><strong>AI detection</strong> &middot; 40 or lower on zerogpt.com</span><span class="pts">2 pts</span></li>
+      <li><span class="crit"><strong>Readability</strong> &middot; Hemingway grade 8 or 9</span><span class="pts">1.5 pts</span></li>
+      <li><span class="crit"><strong>Formatting &amp; FAQs</strong> &middot; clean structure, real FAQ section</span><span class="pts">1.5 pts</span></li>
+      <li><span class="crit"><strong>Word count</strong> &middot; on target at ~1,200 words</span><span class="pts">1 pt</span></li>
+      <li><span class="crit"><strong>No AI tells</strong> &middot; no em-dashes, natural phrasing</span><span class="pts">1 pt</span></li>
+      <li><span class="crit"><strong>SEO title</strong> &middot; optimized, keyword-led</span><span class="pts">1 pt</span></li>
+      <li class="total"><span class="crit"><strong>Total</strong></span><span class="pts">10 pts</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="section-eyebrow">Reference</div>
+    <h2>The delivery workflow this role plugs into</h2>
+    <p>The Local SEO Specialist works inside our end-to-end SEO delivery pipeline: keyword research, content production, QA, optimization, local SEO, and reporting. The full workflow board lives here:</p>
+    <div class="callout brand">
+      <div class="callout-title">SEO Master Workflow board</div>
+      <p><a href="https://teamoutriderdigital.github.io/od-seo-workflow/">teamoutriderdigital.github.io/od-seo-workflow</a></p>
+    </div>
+    <p style="font-size:13.5px;color:var(--ink-mute)">Useful context for the Jack interview: it shows exactly where this hire owns work (keyword research, optimizing existing articles, local SEO and off-page) and the gates their output has to clear.</p>
+  </section>
+
+  <section>
+    <div class="section-eyebrow">Reference &middot; the standard we deliver</div>
+    <h2>Local SEO Impact Checklist</h2>
+    <p>This is the checklist we implement in our services, ordered by impact. It doubles as a benchmark for what a strong candidate should already know. Source: <a href="https://growtharchon.github.io/client-reports/local-seo-checklist.html">growtharchon.github.io/client-reports/local-seo-checklist.html</a> (34 items).</p>
+
+    <div class="tier t1">
+      <div class="tier-head"><span>Game Changers</span><span class="impact">Highest impact</span></div>
+      <ol>
+        <li>Visible address over hidden Service Area Business</li>
+        <li>Physical location within city boundaries</li>
+        <li>Google Ads: Local Services Ads + local search ads</li>
+        <li>Keywords in business name via DBA filing</li>
+        <li>GBP categories: primary + all available slots</li>
+        <li>Strategic press releases for pack / organic / AI ranking</li>
+        <li>Dedicated, optimized service pages per offering</li>
+        <li>Review velocity system with same-day requests</li>
+        <li>Extended GBP hours listing full answerability window</li>
+      </ol>
+    </div>
+
+    <div class="tier t2">
+      <div class="tier-head"><span>Core Foundation</span><span class="impact">High impact</span></div>
+      <ol start="10">
+        <li>Maintain 4.5+ star rating floor</li>
+        <li>Review responses within 24 to 48 hours</li>
+        <li>GBP services field: pre-defined + custom options</li>
+        <li>GBP completeness: all fields filled</li>
+        <li>GBP landing page: city-specific, not homepage</li>
+        <li>NAP consistency across directories</li>
+      </ol>
+    </div>
+
+    <div class="tier t3">
+      <div class="tier-head"><span>Authority &amp; Visibility</span><span class="impact">Medium impact</span></div>
+      <ol start="16">
+        <li>Local PR &amp; press outreach program</li>
+        <li>Editorial "best of" list placements</li>
+        <li>FAQ page with FAQ schema markup</li>
+        <li>Strong local links from relevant sources</li>
+        <li>Review platform diversification</li>
+        <li>Citation consistency in structured directories</li>
+        <li>Unstructured mentions across the web</li>
+      </ol>
+    </div>
+
+    <div class="tier t4">
+      <div class="tier-head"><span>Technical &amp; Content</span><span class="impact">Supporting</span></div>
+      <ol start="23">
+        <li>Title tags: service + city first</li>
+        <li>Structured data markup implementation</li>
+        <li>Mobile-first, fast, frictionless UX</li>
+        <li>Internal linking strategy</li>
+        <li>City / service-area pages with local content</li>
+        <li>Unique, experience-based content strategy</li>
+        <li>GBP photos: monthly refresh minimum</li>
+      </ol>
+    </div>
+
+    <div class="tier t5">
+      <div class="tier-head"><span>The Long Game</span><span class="impact">Compounding</span></div>
+      <ol start="30">
+        <li>YouTube &amp; Reddit expertise content</li>
+        <li>AI visibility instrumentation and tracking</li>
+        <li>Branded search demand building</li>
+        <li>Local community participation</li>
+        <li>Quarterly audits and pruning</li>
+      </ol>
+    </div>
+  </section>
+
+</main>
+
+<div class="footer">
+  <p><strong>Outrider Digital</strong> &middot; Local SEO Specialist Hiring Playbook &middot; for Jack</p>
+  <p>Pipeline: Job post &rarr; Shortlist (Daniel) &rarr; Screening &rarr; Daniel interview &rarr; Paid trial &rarr; Jack interview &rarr; Hire</p>
+</div>
+
+</body>
+</html>
