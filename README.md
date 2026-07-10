@@ -18,7 +18,7 @@ A single-page playbook for the Local SEO Specialist hire: the job post, the recr
 
 ## Terms
 
-30 hours per week, $1,100 USD fixed salary per month. Ongoing local SEO campaigns.
+30 hours per week, $1,500 to $2,500 USD per month based on experience, flexible for the right candidate. Ongoing local SEO campaigns.
 
 ## Paid trial
 
