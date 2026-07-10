@@ -24,6 +24,10 @@ A single-page playbook for the Local SEO Specialist hire: the job post, the recr
 
 Create a new OutriderIT service page in NeuronWriter that meets: NeuronWriter score 80+ (85+ preferred), Hemingway readability grade 8 or 9, 1,200 words, zeroGPT AI score 40 or lower, no em-dashes or AI tells, clean formatting with a FAQs section, and an optimized SEO title. One NeuronWriter link per candidate (tracked in the playbook).
 
+## 30/60/90
+
+Condensed onboarding plan on the page (step 7): 30 days learn and integrate anchored on the July 27 to 31 overlap week, 60 days own delivery across all six clients, 90 days full ownership plus automation. Checkpoints Aug 25, Sep 24, Oct 23 with a keep, coach, or cut gate at day 90.
+
 ## Reference
 
 - SEO delivery workflow: https://teamoutriderdigital.github.io/od-seo-workflow/
