@@ -2,7 +2,7 @@
 
 A single-page playbook for the Local SEO Specialist hire: the job post, the recruitment pipeline with owners, screening questions, the paid trial and how it is scored, the candidate to NeuronWriter link tracker, and the reference material the role plugs into.
 
-**Live playbook:** https://teamoutriderdigital.github.io/od-seo-hiring-playbook/
+**Live playbook:** https://jacksquire.github.io/od-seo-hiring-playbook/
 
 ## Recruitment pipeline
 
